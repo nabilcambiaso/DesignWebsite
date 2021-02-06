@@ -102,6 +102,7 @@ function Deleteproduct() {
       productId: globalId
     },
     success: function (response) {
+        console.log("object");
       loads();
     },
   });

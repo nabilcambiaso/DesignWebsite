@@ -44,7 +44,7 @@ if(isset($_POST["productFNameSubscribe"]))
     }      
     $req=mysqli_query($mysqli,"insert into products(label,image1,image2,image3,description,category_id)
      values('$Productlabel','$images[0]','$images[1]','$images[2]','$ProductDescription','$ProductCategory')") or die(mysqli_error());
-     header("location:../products");
+     header("location:./../products");
 }
 
 
@@ -53,6 +53,8 @@ if(isset($_POST["deleteproduct"])) {
  
   $ProductId=mysqli_real_escape_string($mysqli ,$_POST["productId"]);
   $req=$mysqli->query("delete from products
-  where idProducts='$ProductId'") or die(mysqli_error($req));
+  where idProducts='$ProductId'");
+  header("location:./../products");
+  
 }
 

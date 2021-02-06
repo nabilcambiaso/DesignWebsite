@@ -24,14 +24,12 @@ function nav()
       <link rel="icon" href="images/logo/LogoNomac.ico" type="image/ico" />
       <link rel="stylesheet" href="css/bootstrap.css">
       <link rel="stylesheet" href="fonts/icomoon.css">
-      <link rel="stylesheet" href="fonts/flag-icon-css/css/flag-icon.min.css">
       <link rel="stylesheet" href="css/bootstrap-extended.css">
       <link rel="stylesheet" href="css/app.css">
       <link rel="stylesheet" href="css/colors.css">
       <link rel="stylesheet" href="css/vertical-menu.css">
       <link rel="stylesheet" href="css/vertical-overlay-menu.css">
       <link  href="css/all.min.css">
-      <link rel="shortcut icon" type="image/x-icon" href="../../assets/img/logo/logo.png">
       <!-- datatable -->
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
 

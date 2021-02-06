@@ -28,9 +28,7 @@
                 <div class="col-md-4 offset-md-4 col-xs-10 offset-xs-1  box-shadow-2 p-0">
                     <div class="card border-grey border-lighten-3 m-0">
                         <div class="card-header no-border">
-                            <div class="card-title text-xs-center">
-                                <img src="../assets/img/logo/logo.png" alt="ofppt logo" width="100">
-                            </div>
+                          
                             <h6 class="card-subtitle line-on-side text-muted text-xs-center font-small-3 pt-2"><span>SE CONNECTER</span></h6>
                         </div>
                         <div class="card-body collapse in">
@@ -77,16 +75,16 @@
         </div>
     </div>
 
-    <script src="dashboard/js/jquery.min.js"></script>
-    <script src="dashboard/js/tether.min.js"></script>
-    <script src="dashboard/js/bootstrap.min.js"></script>
-    <script src="dashboard/js/perfect-scrollbar.jquery.min.js"></script>
-    <script src="dashboard/js/unison.min.js"></script>
-    <script src="dashboard/js/blockUI.min.js"></script>
-    <script src="dashboard/js/jquery.matchHeight-min.js"></script>
-    <script src="dashboard/js/app-menu.js"></script>
-    <script src="dashboard/js/app.js"></script>
-    <script src="js/login.js"></script>
+    <script src="./dashboard/js/jquery.min.js"></script>
+    <script src="./dashboard/js/tether.min.js"></script>
+    <script src="./dashboard/js/bootstrap.min.js"></script>
+    <script src="./dashboard/js/perfect-scrollbar.jquery.min.js"></script>
+    <script src="./dashboard/js/unison.min.js"></script>
+    <script src="./dashboard/js/blockUI.min.js"></script>
+    <script src="./dashboard/js/jquery.matchHeight-min.js"></script>
+    <script src="./dashboard/js/app-menu.js"></script>
+    <script src="./dashboard/js/app.js"></script>
+    <script src="./js/login.js"></script>
 
 </body>
 </html>
