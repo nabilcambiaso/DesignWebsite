@@ -790,7 +790,7 @@ body.mobile-nav-active #mobile-nav-toggle i {
 /* Video Section
 --------------------------------*/
 #video {
-  background: url(../img/nota.jpg) center center;
+  background: url(../img/logo/logo.png) center center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 400px;
@@ -909,6 +909,7 @@ body.mobile-nav-active #mobile-nav-toggle i {
 
 /* Team Section
 --------------------------------*/
+
 #team .team-block {
   box-shadow: 0 0 35px rgba(0, 0, 0, 0.1);
   height: 254px;
@@ -931,7 +932,7 @@ body.mobile-nav-active #mobile-nav-toggle i {
   background: #fff none repeat scroll 0 0;
   bottom: 0;
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 rgba(0, 0, 0, 0.19);
-  bottom: -147px;
+  bottom: -547px;
   padding: 20px 0;
   position: absolute;
   width: 100%;

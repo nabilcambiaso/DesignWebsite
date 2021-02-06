@@ -8,16 +8,14 @@ $(".showHide").click(function (e) {
 
   var url=window.location.href;
   //toggle the active class state from dashboard template
-  if(url.indexOf("employee")>-1)
+
+  if(url.indexOf("design")>-1 )
   {
-    $(".navigateEmployee").attr("class", "active");
+    $(".navigateDesign").attr("class", "active");
   }
   else if(url.indexOf("products")>-1)
   {
     $(".navigateProducts").attr("class", "active");
   }
-  else if(url.indexOf("country")>-1 || url.indexOf("departement")>-1 || url.indexOf("location")>-1){
-    $(".navigateGeneral").css("background", "#009879");
-  }
-
+ 
 

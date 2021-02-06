@@ -6,7 +6,7 @@
       <h1>Welcome to Majda Design</h1>
       <h2>Elegant Design for Your Logo, Business Card, Flyers &amp; more...</h2>
       <img id="sectionImage" src="assets/img/hero-img.png" alt="Hero Imgs" data-aos="zoom-out" data-aos-delay="100">
-      <a href="#get-started" class="btn-get-started scrollto">Get Started</a>
+      <a href="./design" class="btn-get-started scrollto">Get Started</a>
       <div class="btns">
         <a href="#"><i class="fa fa-facebook fa-3x"></i> Facebook</a>
         <a href="#"><i class="fa fa-instagram fa-3x"></i> Instagram </a>
@@ -25,41 +25,9 @@
           <p class="separator">Find Our Latest Posts Here</p>
         </div>
 
-        <div class="row" data-aos="fade-up" data-aos-delay="100">
-          <div class="col-md-6 col-lg-4">
-            <div class="block-blog text-left">
-              <a href="#"><img src="assets/img/blog/blog-image-1.jpg" alt="img"></a>
-              <div class="content-blog">
-                <h4><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, beatae.</a></h4>
-                <span>date here <!--date here --></span>
-                <a class="pull-right readmore" href="#">read more</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-4">
-            <div class="block-blog text-left">
-              <a href="#"><img src="assets/img/blog/blog-image-2.jpg" class="img-responsive" alt="img"></a>
-              <div class="content-blog">
-                <h4><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, laboriosam.</a></h4>
-                <span>date here</span>
-                <a class="pull-right readmore" href="#">read more</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-4">
-            <div class="block-blog text-left">
-              <a href="#"><img src="assets/img/blog/blog-image-3.jpg" class="img-responsive" alt="img"></a>
-              <div class="content-blog">
-                <h4><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, asperiores?</a></h4>
-                <span>date here</span>
-                <a class="pull-right readmore" href="#">read more</a>
-              </div>
-            </div>
-          </div>
-          
-
+        <div class="row threeLatestDesigns" data-aos="fade-up" data-aos-delay="100">
+          <!--pics here-->
+         
         </div>
       </div>
     </section><!-- End Blog Section -->
@@ -70,7 +38,7 @@
 <div class="container" data-aos="fade-up">
   <div class="section-title text-center">
     <h2>Amazing Features.</h2>
-    <p class="separator">Integer cursus bibendum augue ac cursus .</p>
+    <p class="separator">There are three responses to a piece of design – yes, no, and WOW! Wow is the one to aim for.</p>
   </div>
 
   <div class="row" data-aos="fade-up" data-aos-delay="100">
@@ -79,15 +47,15 @@
       <div class="feature-block">
         <img src="assets/img/svg/paint-palette.svg" alt="img" class="img-fluid">
         <h4>creative design</h4>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+        <p>Art is anything you can get away with.</p>
       </div>
     </div>
 
     <div class="col-md-6 col-lg-3">
       <div class="feature-block">
         <img src="assets/img/svg/vector.svg" alt="img" class="img-fluid">
-        <h4>Retina Ready</h4>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+        <h4>Calculated Views</h4>
+        <p>Design is thinking made visual.</p>
       </div>
     </div>
 
@@ -95,14 +63,14 @@
       <div class="feature-block">
         <img src="assets/img/svg/design-tool.svg" alt="img" class="img-fluid">
         <h4>Presice Edges</h4>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+        <p>No masterpiece was ever created by a lazy artist.</p>
       </div>
     </div>
     <div class="col-md-6 col-lg-3">
       <div class="feature-block">
         <img src="assets/img/svg/pixel.svg" alt="img" class="img-fluid">
         <h4>Perfect Pixel</h4>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+        <p>We often plough so much energy into the big picture, we forget the pixels.</p>
       </div>
     </div>
 
@@ -155,7 +123,7 @@
         <div class="container-fluid container-full" data-aos="zoom-in">
 
           <div class="row">
-            <a href="#" class="js-modal-btn play-btn" data-video-id="QLycZyG_xGA"></a>
+            <a href="#" class="js-modal-btn play-btn" data-video-id=""></a>
           </div>
 
         </div>
@@ -229,7 +197,7 @@
                   <div class="error-message"></div>
                   <div class="sent-message">Your message has been sent. Thank you!</div>
                 </div>
-                <div class="text-center"><button type="button" id="sendMessage">Send Message</button></div>
+                <div class="text-center"><button type="button" id="sendMessage" onclick="sendmessage()">Send Message</button></div>
               </form>
             </div>
           </div>
@@ -240,4 +208,4 @@
   </main><!-- End #main -->
 
   <?php footer(); ?>
-
+  <script src="javascriptFiles/index.js"></script>

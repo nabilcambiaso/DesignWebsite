@@ -1,6 +1,6 @@
 // Design js
 //variables-----------------------------------
-var phpUrl = "PhpFiles/Design.service.php";
+var phpUrl = "PhpFiles/Products.service.php";
 var globalId=-1;
 // datatables---------------------------------
 $("#example").dataTable();
@@ -18,22 +18,22 @@ function loads() {
         t.row
           .add([
             "<br><br><a  style='width:100px; height:100px' href='assign?id=" +
-              val.idDesign +
+              val.idProducts +
               "'>" +
               val.catLabel +
               "</a>",
             "<br><br><a  href='assign?id=" +
-              val.idDesign +
+              val.idProducts +
               "'>" +val.label+
               "</a>",
               "<br><br>"+val.description,
               "<br><br>"+val.date,
-            "<a data-toggle='modal' data-target='#detailModal'><img style='width:100px; height:100px' src='../../assets/img/designs/"+val.image1+"' ></img></a>",
-            "<br><br><a  onclick=detailsDesign('" +
-              val.idDesign +
+            "<a data-toggle='modal' data-target='#detailModal'><img style='width:100px; height:100px' src='../../assets/img/products/"+val.image1+"' ></img></a>",
+            "<br><br><a  onclick=detailsproduct('" +
+              val.idProducts +
               "')><i class='fas fa-cog fa-2x'></i></a>",
             "<br><br><a data-toggle='modal' data-target='#deleteModal' onclick=CodeVerification('" +
-            val.idDesign +
+            val.idProducts +
             "')><i class='fas fa-trash fa-2x'></i></a>"
           ])
           .draw(false);
@@ -53,7 +53,7 @@ function loadCategories() {
     success: function (response) {
 
       $.each(JSON.parse(response), function (key, val) {
-        $("#designCategoryAdd").append(
+        $("#productCategoryAdd").append(
           `<option value="${val.id}">${val.catLabel}</option>`
         );
       });
@@ -93,13 +93,13 @@ function CodeVerification(id) {
 globalId=id;
 }
 //delete Design *
-function DeleteDesign() {
+function Deleteproduct() {
   $.ajax({
     type: "post",
     url: phpUrl,
     data: {
-      deleteDesign: "delete",
-      designId: globalId
+      deleteproduct: "delete",
+      productId: globalId
     },
     success: function (response) {
       loads();

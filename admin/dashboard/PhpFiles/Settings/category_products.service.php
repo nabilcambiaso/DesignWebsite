@@ -2,7 +2,7 @@
 include "../../../crud/dbConnexion.php";
 //onload *
 if (isset($_POST["loadCategorys"])) {
-    $req1 = $mysqli->query("select * from category") or die(mysqli_error());
+    $req1 = $mysqli->query("select * from category_products") or die(mysqli_error());
     $category = [];
     while ($ligne = mysqli_fetch_assoc($req1)) {
         $category[] = $ligne;
@@ -21,7 +21,7 @@ if (isset($_POST["AddNewCategory"])) {
       echo("2");
     }
     else{
-        $req1 = $mysqli->query("INSERT INTO `category`
+        $req1 = $mysqli->query("INSERT INTO `category_products`
         (catLabel) values ('$Category_Name')")
       or die(mysqli_error());
       echo ("success");
@@ -32,7 +32,7 @@ if (isset($_POST["AddNewCategory"])) {
 //Remove a location from location List in db *
 if (isset($_POST["Delete_Category"])) {
     $category_id = mysqli_real_escape_string($mysqli, $_POST["Category_Id"]);
-    $req1 = $mysqli->query("delete from category where id='$category_id'")
+    $req1 = $mysqli->query("delete from category_products where id='$category_id'")
     or die(mysqli_error());
     echo ("success");
 }
@@ -41,7 +41,7 @@ if (isset($_POST["Delete_Category"])) {
 if (isset($_POST["edit_Category"])) {
     $Category_Name=mysqli_real_escape_string($mysqli, $_POST["Category_Name"]);
     $category_id = mysqli_real_escape_string($mysqli, $_POST["Category_Id"]);
-    $req1 = $mysqli->query("UPDATE  `category` SET
+    $req1 = $mysqli->query("UPDATE  `category_products` SET
         catLabel = '$Category_Name'
         Where id = '$category_id'
         ")

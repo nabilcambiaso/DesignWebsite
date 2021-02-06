@@ -45,12 +45,10 @@ function nav()
 
       <nav id="nav-menu-container">
         <ul class="nav-menu">
-          <li ><a href="./index">Home</a></li>
-          <li class="menu-active"><a href="./design">Designs</a></li>
-          <li><a href="./index#blog">Latest</a></li>
-          <li><a href="./index#features">Features</a></li>
-          <li><a href="./index#about-us">About</a></li>
-          <li><a href="./index#contact">Contact</a></li>
+          <li><a href="./index"><i class="fa fa-home"></i> Home</a></li>
+          <li><a href="./design"><i class="fa fa-pencil"></i> Designs</a></li>
+          <li><a href="./index#contact"><i class="fa fa-user"></i> Contact</a></li>
+          <li><a href="./saved"><i class="fa fa-bookmark"></i> Saved</a></li>
         </ul>
       </nav><!-- #nav-menu-container -->
     </div>
@@ -139,7 +137,6 @@ function footer()
   <script src="assets/vendor/superfish/superfish.min.js"></script>
   <script src="assets/vendor/hoverIntent/hoverIntent.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
-  <script src="javascriptFiles/contact.js"></script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>

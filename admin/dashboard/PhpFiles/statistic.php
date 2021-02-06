@@ -1,13 +1,14 @@
 <?php
 include "../../crud/dbConnexion.php";
-//all employe
-if(isset($_POST['employes'])){
-    $sql = "select count(*) as nbr from employee_info e join location l on e.location=l.location_id where e.Archived='0' and l.Archived='0'";
+//all designs
+if(isset($_POST['totalDesigns'])){
+  $num=[];
+    $sql = "select count(*) as nbr from design ";
     $req=$mysqli->query($sql) or die(mysqli_error());
     while($ligne=mysqli_fetch_assoc($req)) {
-        echo $ligne['nbr'];
-    }
-    
+         $num[]=$ligne;
+    }    
+    echo json_encode($num);
 }
 
 //TOTAL EMPLOYEES/Location

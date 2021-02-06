@@ -1,5 +1,5 @@
 //variables-----------------------------------
-var phpUrl = "PhpFiles/Settings/category.service.php";
+var phpUrl = "PhpFiles/Settings/category_products.service.php";
 var globalCode=-1;
 //on load *------------------------------------
 var t = $("#showData");

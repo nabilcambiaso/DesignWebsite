@@ -37,7 +37,7 @@
       font-size: larger;
    }
 
-   .labelLinkDesign {
+   .labelLinkproduct {
       text-align: center;
    }
 
@@ -46,31 +46,31 @@
    }
 </style>
 <?php nav(); ?>
-<!--modal delete Design -->
+<!--modal delete product -->
 <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel"
    aria-hidden="true">
    <div class="modal-dialog">
       <div class="modal-content">
          <div class="modal-header">
-            <h3 class="modal-title" id="deleteModalLabel"><i class="fas fa-trash fa-1x"></i> Delete Design</h3>
+            <h3 class="modal-title" id="deleteModalLabel"><i class="fas fa-trash fa-1x"></i> Delete product</h3>
          </div>
          <div class="modal-body">
             <div class="container">
                <h4><i class="fas fa-exclamation-triangle red"></i> Are You sure You Want To Delete This
-                  Design ?</h4>
-               <input type="text" id="deletedDesignCode" hidden>
+                  product ?</h4>
+               <input type="text" id="deletedproductCode" hidden>
             </div>
          </div>
          <div class="modal-footer">
             <button type="button" id="detailCloseButton" class="btn btn-secondary" data-dismiss="modal">
                Cancel
             </button>
-            <input type="button" class="btn btn-danger" data-dismiss="modal" value="Delete" onclick="DeleteDesign()">
+            <input type="button" class="btn btn-danger" data-dismiss="modal" value="Delete" onclick="Deleteproduct()">
          </div>
       </div>
    </div>
 </div>
-<!--end modal delete Design  -->
+<!--end modal delete product  -->
 
 <!-- success Modal -->
 <div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="successModalLabel"
@@ -114,21 +114,21 @@
 
    <!-- add button * -->
    <div class="row">
-      <button type="submit" class="btn btn-success btn-small mb-4 " data-toggle="modal" data-target="#addDesignModal"
+      <button type="submit" class="btn btn-success btn-small mb-4 " data-toggle="modal" data-target="#addProductModal"
          >
          <i class="icon-plus"></i>
-         Add New Design
+         Add New product
       </button>
       <br /><br />
    </div>
 
 
-   <!--table Design *-->
+   <!--table product *-->
    <table class="table table-striped" id="example">
       <thead>
          <tr>
             <th>Category</th>
-            <th>Design Label</th>
+            <th>product Label</th>
             <th>Description</th>
             <th>Added At</th>
             <th>Image</th>
@@ -142,13 +142,13 @@
 <!--end Main Content ____________________________-->
 
 
-<!-- Modal Add new Design _____________________________________________________________________________-->
-<div class="modal fade" id="addDesignModal" tabindex="-1" role="dialog" aria-labelledby="addDesignModalLabel"
+<!-- Modal Add new product _____________________________________________________________________________-->
+<div class="modal fade" id="addProductModal" tabindex="-1" role="dialog" aria-labelledby="addProductModalLabel"
    aria-hidden="true">
    <div class="modal-dialog">
       <div class="modal-content">
          <div class="modal-header">
-            <h5 class="modal-title" id="addDesignModalLabel"><span><i class="icon-pencil2"></i> Add New Design </span></h5>
+            <h5 class="modal-title" id="addProductModalLabel"><span><i class="icon-pencil2"></i> Add New Product </span></h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                <span aria-hidden="true">&times;</span>
             </button>
@@ -157,7 +157,7 @@
          <div class="modal-body">
             <!-- form-->
             <div class="container">
-            <form method="post" action="phpFiles/Design.service.php" enctype="multipart/form-data">
+            <form method="post" action="phpFiles/Products.service.php" enctype="multipart/form-data">
                   <div class="row">
                   <div class="form-group col-md-12">
                 <label style="cursor:pointer;" class="form-control" for="fileimagesAdd"> Add Pictures <sup>*</sup>&nbsp; <i class="icon-image"></i></label>
@@ -178,14 +178,14 @@
                   </div>
                   <div class="row">
                      <div class="form-group col-md-6">
-                        <label for="exampleInputEmail1">Design Label <span class="verified"><i class="icon-eye"></i></span></label>
-                        <input type="text" class="form-control" name="DesignFNameSubscribe" id="DesignFNameSubscribe" aria-describedby="emailHelp"
+                        <label for="exampleInputEmail1">Product Label <span class="verified"><i class="icon-eye"></i></span></label>
+                        <input type="text" class="form-control" name="productFNameSubscribe" id="productFNameSubscribe" aria-describedby="emailHelp"
                            required />
                      </div>
 
                      <div class="form-group col-md-6">
-                     <label for="exampleInputEmail1">Design Category <span class="verified"><i class="icon-sina-weibo"></i></span></label>
-                     <select name="designCategoryAdd" class="form-control" id="designCategoryAdd">
+                     <label for="exampleInputEmail1">Product Category <span class="verified"><i class="icon-sina-weibo"></i></span></label>
+                     <select name="productCategoryAdd" class="form-control" id="productCategoryAdd">
                         <!--categories here-->
                      </select>
                      </div>
@@ -193,9 +193,9 @@
 
                   <div class="row">
                    <div class="form-group">
-                     <label for="exampleInputEmail1">Design Description <span class="verified"><i class="icon-paper"></i></span></label>
+                     <label for="exampleInputEmail1">Product Description <span class="verified"><i class="icon-paper"></i></span></label>
                      <br />
-                     <textarea name="designDescriptionAdd" id="designDescriptionAdd" cols="83" rows="3" required></textarea>
+                     <textarea name="productDescriptionAdd" id="productDescriptionAdd" cols="83" rows="3" required></textarea>
                    </div>
                   </div>
 
@@ -216,15 +216,15 @@
       </div>
    </div>
 </div>
-<!--end Modal Add new Design___________________________________________________________________________-->
+<!--end Modal Add new product___________________________________________________________________________-->
 
-<!--modal2 Design details -->
-<div class="modal modalD fade" id="detailModal" tabindex="-1" role="dialog" aria-labelledby="designDetailsLabel"
+<!--modal2 product details -->
+<div class="modal modalD fade" id="detailModal" tabindex="-1" role="dialog" aria-labelledby="productDetailsLabel"
    aria-hidden="true">
    <div class="modal-dialog">
       <div class="modal-content">
          <div class="modal-header">
-            <h5 class="modal-title" id="desinDetailsLabel">Design Details</h5>
+            <h5 class="modal-title" id="desinDetailsLabel">product Details</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                <span aria-hidden="true">&times;</span>
             </button>
@@ -251,10 +251,10 @@
       </div>
    </div>
 </div>
-<!--end modal 2 Design details -->
+<!--end modal 2 product details -->
 
 
 
    <!--scripts -->
-   <script src="js/Design.js"></script>
+   <script src="js/Products.js"></script>
    <?php footer() ?>

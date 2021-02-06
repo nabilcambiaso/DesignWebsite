@@ -4,15 +4,59 @@ include "../../crud/dbConnexion.php";
 //onload
 if(isset($_POST["load"]))
 {
-  $req1=$mysqli->query("select distinct * from  employee_info e join location l on e.location=l.location_id join country c on e.country
-  =c.country_code join departement d on d.departement_id=e.department left join authentification a on a.UserId=e.line_manager    where e.Archived='0'  group by e.employee_id");
-  $employee=[];
+  $req1=$mysqli->query("select * from design d join category c on c.id=d.category_id");
+  $designs=[];
   while($ligne=mysqli_fetch_assoc($req1))
   {
-    $employee[]=$ligne;
+    $designs[]=$ligne;
   }
-  echo json_encode($employee);
+  echo json_encode($designs);
 }
+
+
+//onload categories
+if(isset($_POST["loadCategories"]))
+{
+  $req1=$mysqli->query("select * from category");
+  $category=[];
+  while($ligne=mysqli_fetch_assoc($req1))
+  {
+    $category[]=$ligne;
+  }
+  echo json_encode($category);
+}
+
+//----add Design
+if(isset($_POST["DesignFNameSubscribe"]))
+{
+    
+    $Designlabel=mysqli_real_escape_string($mysqli ,$_POST["DesignFNameSubscribe"]);
+    $designDescription=mysqli_real_escape_string($mysqli ,$_POST["designDescriptionAdd"]);
+    $designCategory=mysqli_real_escape_string($mysqli ,$_POST["designCategoryAdd"]);
+   
+    $images=[];
+    $imgcount=count($_FILES['image']['name']);
+    for($i=0;$i<$imgcount;$i++)
+    {
+        $images[]=$Designlabel.$_FILES['image']['name'][$i];
+        $label=$Designlabel.$_FILES['image']['name'][$i];
+        move_uploaded_file($_FILES['image']['tmp_name'][$i],"..\..\..\assets\img\designs\\".$label);
+    }      
+    $req=mysqli_query($mysqli,"insert into design(label,image1,image2,image3,description,category_id)
+     values('$Designlabel','$images[0]','$images[1]','$images[2]','$designDescription','$designCategory')") or die(mysqli_error());
+     header("location:../design");
+}
+
+
+// delete design
+if(isset($_POST["deleteDesign"])) {
+ 
+  $designId=mysqli_real_escape_string($mysqli ,$_POST["designId"]);
+  $req=$mysqli->query("delete from design
+  where idDesign='$designId'") or die(mysqli_error($req));
+}
+
+/*
 //get departments *
 if(isset($_POST["department"]))
 {
@@ -141,15 +185,7 @@ if(isset($_POST["idModalEmployee"]))
   echo json_encode($employee);
 }
 
-  // Archive Employee
-  if(isset($_POST["ArchiveSelectedEmployee"])) {
-    echo("Success");
-    $employeeId=mysqli_real_escape_string($mysqli ,$_POST["EmployeeId"]);
-
-    $req=mysqli_query($mysqli,"UPDATE employee_info SET 
-    Archived = '1'
-    where employee_id='$employeeId'") or die(mysqli_error($req));
-  }
+  
 
 
   // Edit Selected Employee  *
@@ -376,4 +412,4 @@ if(isset($_POST["AssetTypeFillByCategoryChange"]))
       or die(mysqli_error());
       echo "succes Assign";
     }
- 
+ */
