@@ -39,15 +39,15 @@ function nav()
   <header id="header" class="header">
     <div class="container">
 
-      <div id="logo" class="pull-left">
-        <a href="./index"><img src="assets/img/logo/logo.png" width="120px" alt="" title="" /></a>
+      <div id="logoMaster" class="pull-left">
       </div>
 
       <nav id="nav-menu-container">
         <ul class="nav-menu">
-          <li><a href="./index"><i class="fa fa-home"></i> Home</a></li>
+          <li><a href="./"><i class="fa fa-home"></i> Home</a></li>
           <li><a href="./design"><i class="fa fa-pencil"></i> Designs</a></li>
-          <li><a href="./index#contact"><i class="fa fa-user"></i> Contact</a></li>
+          <li><a href="./products"><i class="fa fa-pencil"></i> Products</a></li>
+          <li><a href="./#contact"><i class="fa fa-user"></i> Contact</a></li>
           <li><a href="./saved"><i class="fa fa-bookmark"></i> Saved</a></li>
         </ul>
       </nav><!-- #nav-menu-container -->
@@ -68,7 +68,7 @@ function footer()
         <div class="col-md-12 col-lg-4">
           <div class="footer-logo">
 
-            <a class="navbar-brand" href="#"><h3>Majda Design</h3></a>
+            <a class="navbar-brand" href="#"><h3>Majda Website</h3></a>
             <p>Styles come and go. Good design is a language, not a style.</p>
 
           </div>
@@ -91,10 +91,13 @@ function footer()
         <div class="col-sm-6 col-md-4 col-lg-2">
           <div class="list-menu">
 
-            <h4>Design</h4>
+            <h4>Services</h4>
 
             <ul class="list-unstyled">
-              <li><a href="#">Designs</a></li>
+              <li><a href="./design">Designs</a></li>
+            </ul>
+            <ul class="list-unstyled">
+              <li><a href="./products">Products</a></li>
             </ul>
 
           </div>
@@ -137,6 +140,7 @@ function footer()
   <script src="assets/vendor/superfish/superfish.min.js"></script>
   <script src="assets/vendor/hoverIntent/hoverIntent.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
+  <script src="./javascriptFiles/master.js"></script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>

@@ -17,5 +17,8 @@ $(".showHide").click(function (e) {
   {
     $(".navigateProducts").attr("class", "active");
   }
+
+
+
  
 

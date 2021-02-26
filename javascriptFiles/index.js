@@ -1,6 +1,6 @@
 const phpUrl="./phpFiles/index.service.php";
 
-function load() {
+function loadDesign() {
 $.ajax({
     type: "post",
     url: phpUrl,
@@ -26,7 +26,37 @@ $.ajax({
     }
 });
   }
-  load();
+  loadDesign();
+
+
+  function loadProducts() {
+    $.ajax({
+        type: "post",
+        url: phpUrl,
+        data: {loadProducts:"load"},
+        success: function (response) {
+            response=JSON.parse(response);
+            console.log(response);
+            $.each(response, function (key, val) { 
+                 $(".threeLatestProducts").append(`
+                 <div class="col-md-6 col-lg-4">
+                 <div class="block-blog text-center" >
+                   <a href="./design"><img src="./assets/img/products/${val.image1}" style="width:350px;height:250px;" class="img-responsive" alt="img"></a>
+                   <div class="content-blog">
+                     <h4 style="color:#329178;">${val.label}</h4>
+                     <h6>${val.description}</h6>
+                     <br>
+                     <span style="color:#C8C8C8;">${val.date}</span>
+                     <a class="pull-right readmore" style="color:#71C55D;" href="./products">See More Products</a>
+                   </div>
+                 </div>
+               </div>
+                 `);
+            });
+        }
+    });
+      }
+      loadProducts();
 
   function sendmessage()
 {

@@ -3,8 +3,9 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero">
     <div class="hero-container" data-aos="fade-in">
-      <h1>Welcome to Majda Design</h1>
+      <h1>Welcome to Majda Website</h1>
       <h2>Elegant Design for Your Logo, Business Card, Flyers &amp; more...</h2>
+      <h3>Bio Products and more...</h3>
       <img id="sectionImage" src="assets/img/hero-img.png" alt="Hero Imgs" data-aos="zoom-out" data-aos-delay="100">
       <a href="./design" class="btn-get-started scrollto">Get Started</a>
       <div class="btns">
@@ -21,11 +22,24 @@
       <div class="container" data-aos="fade-up">
         <div class="section-title text-center">
 
-          <h2>Latest posts</h2>
-          <p class="separator">Find Our Latest Posts Here</p>
+          <h2><i class="fa fa-paint-brush  fa-6x"></i> &nbsp; Latest Designs</h2>
+          <p class="separator">Find Our Latest Designs Here</p>
         </div>
 
         <div class="row threeLatestDesigns" data-aos="fade-up" data-aos-delay="100">
+          <!--pics here-->
+         
+        </div>
+      </div>
+
+      <div class="container" style="margin-top:30px;" data-aos="fade-up">
+        <div class="section-title text-center">
+
+          <h2> <i class="fa fa-leaf fa-5x" ></i> &nbsp;Latest Products </h2>
+          <p class="separator">Find Our Latest Products Here</p>
+        </div>
+
+        <div class="row threeLatestProducts" data-aos="fade-up" data-aos-delay="100">
           <!--pics here-->
          
         </div>
@@ -84,41 +98,11 @@
 
 
     <!-- ======= About Us Section ======= -->
-    <section id="about-us" class="about-us padd-section">
-      <div class="container" data-aos="fade-up">
-        <div class="row justify-content-center">
-
-          <div class="col-md-5 col-lg-3">
-            <img src="assets/img/aboutImg.png" alt="About" data-aos="zoom-in" data-aos-delay="100">
-          </div>
-
-          <div class="col-md-7 col-lg-5">
-            <div class="about-content" data-aos="fade-left" data-aos-delay="100">
-
-              <h2><span>Majda</span> Design Mobile </h2>
-              <p>
-              </p>
-
-              <ul class="list-unstyled">
-                <li><i class="fa fa-angle-right"></i>Creative Design</li>
-                <li><i class="fa fa-angle-right"></i>Perfect Pixels</li>
-                <li><i class="fa fa-angle-right"></i>Best Quality</li>
-                <li><i class="fa fa-angle-right"></i>Perfect Timing</li>
-                <li><i class="fa fa-angle-right"></i>Best Pricing</li>
-                <li><i class="fa fa-angle-right"></i>Unlimited Features</li>
-              </ul>
-
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section><!-- End About Us Section -->
-
+  /
   
  
     <!-- ======= Video Section ======= -->
-    <section id="video" class="text-center">
+    <!-- <section id="video" class="text-center">
       <div class="overlay">
         <div class="container-fluid container-full" data-aos="zoom-in">
 
@@ -128,7 +112,8 @@
 
         </div>
       </div>
-    </section><!-- End Video Section -->
+    </section> -->
+    <!-- End Video Section -->
 
 
    
