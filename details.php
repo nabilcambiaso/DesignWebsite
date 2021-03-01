@@ -1,7 +1,7 @@
 <?php include "./master.php" ;nav(); ?>
 <style> #img2:hover{transform:translate(100%,100%) scale(1.6);
   transition: 0.5s ease;}</style>
-	<div id="mainBody" style="margin-top: 80px; ">
+	<div id="mainBody" style="margin-top: 220px; ">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">

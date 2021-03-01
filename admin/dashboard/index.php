@@ -1,6 +1,7 @@
 <?php
 include '../crud/dashboardTemplate.php';?>
 <?php nav(); ?>
+
 <div class="content-wrapper">
         <div class="content-header row">
         </div>
@@ -15,6 +16,21 @@ include '../crud/dashboardTemplate.php';?>
                             </div>
                             <div class="p-2 media-body">
                             <div id="totalDesigns"></div>
+                                <span class="text-bold-500">Total Designs</span>
+                            </div>
+                        </div>
+                    </div></a>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-6 col-xs-12">
+                <div class="card shadow-card" style="border-right: solid 3px #2494be;border-radius: 4px;">
+                    <a href="./design"><div class="card-body" style="cursor:pointer;">
+                        <div class="media">
+                            <div class="p-2 text-xs-center bg-info media-left media-middle">
+                                <i class="icon-leaf font-large-2 white"></i>
+                            </div>
+                            <div class="p-2 media-body">
+                            <div id="totalProducts"></div>
                                 <span class="text-bold-500">Total Products</span>
                             </div>
                         </div>
@@ -29,8 +45,8 @@ include '../crud/dashboardTemplate.php';?>
                                 <i class="icon-mail2 font-large-2 white"></i>
                             </div>
                             <div class="p-2 media-body">
-                            <div id="allproduct"></div>
-                                 <span class="text-bold-500">Total Messages</span>
+                            <div id="totalMessages"></div>
+                                 <span class="text-bold-500">Unseen Messages</span>
                             </div>
                         </div>
                     </div>
@@ -56,29 +72,33 @@ include '../crud/dashboardTemplate.php';?>
           </div>
         </div>
         <div class="row">
-        <div class="col-md-6">
+      
+        <div class="col-md-8">
+
 <table class="table">
   <thead>
-  <h3></h3>
-  <tr class="table-success"style="text-align: center;font-size: 10px; ">
-      <th></th>
-      <th></th>
-      <th></th>
+  <tr class="table-success"style="text-align: center;font-size: 10px; ">  
+  <td colspan="2"></td>   
     </tr>
   </thead>
-  <tbody id="tbodyS">
+  <tbody id="tbodyTheMessage">
+    
   </tbody>
 </table>
+        </div>
+
+
+        <div class="col-md-4">
+
 <table class="table">
   <thead>
   <h3></h3>
-  <tr class="table-success"style="text-align: center;font-size: 10px; ">
-      <th></th>
-      <th></th>
-      <th></th>
+  <tr class="table-success "style="text-align: center;font-size: 10px; ">
+      <th>Name</th>
     </tr>
   </thead>
-  <tbody id="tbodyS">
+  <tbody id="tbodyMessagesButtons">
+     
   </tbody>
 </table>
         </div>

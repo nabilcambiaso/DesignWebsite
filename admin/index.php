@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="dashboard/css/bootstrap.css">
     <link rel="stylesheet" href="dashboard/fonts/icomoon.css">
-    <link rel="icon" href="dashboard/images/logo/LogoNomac.ico" type="image/ico" />
     <link rel="stylesheet" href="dashboard/fonts/flag-icon-css/flag-icon.min.css">
     <link rel="stylesheet" href="dashboard/css/bootstrap-extended.css">
     <link rel="stylesheet" href="dashboard/css/app.css">
@@ -13,10 +12,9 @@
     <link rel="stylesheet" href="dashboard/css/vertical-menu.css">
     <link rel="stylesheet" href="dashboard/css/vertical-overlay-menu.css">
     <link rel="stylesheet" href="dashboard/css/login-register.css">
-    <link rel="shortcut icon" type="image/x-icon" href="../images/Logo_ofppt.png">
     <link rel="stylesheet" href="sass/style.css">
 
-    <title>Majda Design - Portal</title>
+    <title>Majda Website - Portal</title>
 </head>
 <body data-open="click" data-menu="vertical-menu" data-col="1-column" class="vertical-layout vertical-menu 1-column  blank-page blank-page">
     <div class="app-content content container-fluid">
@@ -54,7 +52,6 @@
                                                 <label for="remember-me"> Souviens-toi de moi</label>
                                             </fieldset>-->
                                         </div>
-                                        <div class="col-md-6 col-xs-12 text-xs-center text-md-right"><a href="ForgotPass" class="card-link">Forgot Password ?</a></div>
                                     </fieldset>
                                     <button type="button" onclick="login()" class="btn btn-primary btn-lg btn-block" style="background-color:grey;"><i class="icon-unlock2"></i> Login</button>
                                 </form>

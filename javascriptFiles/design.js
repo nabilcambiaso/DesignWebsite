@@ -18,7 +18,7 @@ function load(id,search) {
                  <div style="margin-top:18px; cursor:pointer;" class="col-md-4 col-sm-6 col-xs-6 col-lg-3 designCard" data-aos="zoom-in" data-aos-delay="100">
       <div class="team-block bottom">
          <!--picture here -->
-         <a href="./details?id=${val.idDesign}"><img src="assets/img/designs/${val.image1}" style="width:100%; cursor:pointer;" title="See More !" class="img-responsive" alt="img"></a>
+         <a href="./details?type=1&id=${val.idDesign}"><img src="assets/img/designs/${val.image1}" style="width:100%; cursor:pointer;" title="See More !" class="img-responsive" alt="img"></a>
         <div class="team-content">
           <ul class="list-unstyled">
             <li>
@@ -28,7 +28,7 @@ function load(id,search) {
               <div class="fa-layers-counter" id="counter${val.idDesign}" style="color:#FF797E; font-weight:bold;  margin-left:22px; margin-top:-22px;">${val.likes}</div>
             </div>
            </li>
-            <li><a title="Send Email About this Design" href="./details?id=${val.idDesign}">       
+            <li><a title="Send Email About this Design" href="./details?type=1&id=${val.idDesign}">       
                <i class="fa fa-envelope"></i></a>
             </li>
             <li><a class="savedBookmark" onclick="saveDesign(${val.idDesign})" ><i class="fa fa-bookmark"></i></a></li>
